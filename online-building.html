@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТРУА</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-static-page="onlineBuilding">
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+  <header class="header">
+    <div class="header__aux">
+      <div class="container header__aux-inner">
+        <div class="header__aux-left">
+          <span class="header__portal">Официальный портал</span>
+          <span class="header__region">Таласская область, Кыргызская Республика</span>
+        </div>
+        <div class="header__aux-right">
+          <a href="https://www.gov.kg/ky/information/stopcorruption" class="header__anti-corruption" target="_blank" rel="noopener noreferrer">Стоп коррупция</a>
+          <div class="lang-switcher" role="group" aria-label="Язык интерфейса">
+            <button type="button" class="lang-btn is-active" data-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" class="lang-btn" data-lang="ky" aria-pressed="false">KY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__brand">
+      <div class="container header__brand-inner">
+        <a href="index.html#home" class="logo-mark" aria-label="ТРУА — на главную">ТРУА</a>
+        <h1 class="header__sitename">Таласское районное управление по градостроительству и архитектуре</h1>
+      </div>
+    </div>
+    <div class="header__nav-wrap">
+      <div class="container header__nav-row">
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="main-nav" aria-label="Основное меню">
+          <ul class="nav__list">
+            <li><a href="index.html#home" class="nav__link" data-i18n="navHome">Главная</a></li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button type="button" class="nav__link nav__dropdown-toggle" id="about-dropdown-toggle" aria-expanded="false" aria-controls="about-dropdown-menu" data-i18n="navAbout">О нас</button>
+              <ul class="nav__dropdown" id="about-dropdown-menu">
+                <li><a href="index.html#about" class="nav__dropdown-link" data-about-target="about-leaders" data-i18n="navAboutLeaders">Руководители</a></li>
+                <li><a href="documents.html" class="nav__dropdown-link" data-i18n="navAboutDocuments">Нормативно-правовые документы</a></li>
+                <li><a href="history.html" class="nav__dropdown-link" data-i18n="navAboutHistory">История создания Таласской архитектуры</a></li>
+                <li><a href="photos.html" class="nav__dropdown-link" data-i18n="navAboutPhotos">Фотогалерея</a></li>
+                <li><a href="videos.html" class="nav__dropdown-link" data-i18n="navAboutVideos">Видеогалерея</a></li>
+                <li><a href="honor.html" class="nav__dropdown-link" data-i18n="navAboutHonor">Доска почета</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#projects" class="nav__link" data-i18n="navProjects">Проекты</a></li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button type="button" class="nav__link nav__dropdown-toggle" id="apply-dropdown-toggle" aria-expanded="false" aria-controls="apply-dropdown-menu" data-i18n="navApply">Онлайн-услуги</button>
+              <ul class="nav__dropdown" id="apply-dropdown-menu">
+                <li><a href="online-apz.html" class="nav__dropdown-link" data-i18n="navOnlineApz">Подача заявки на АПЗ</a></li>
+                <li><a href="online-building.html" class="nav__dropdown-link" data-i18n="navOnlineBuilding">Разрешение на строительство</a></li>
+                <li><a href="online-project.html" class="nav__dropdown-link" data-i18n="navOnlineProject">Согласование проекта</a></li>
+                <li><a href="online-topo.html" class="nav__dropdown-link" data-i18n="navOnlineTopo">Топографическая съёмка</a></li>
+                <li><a href="index.html#apply" class="nav__dropdown-link" data-i18n="navApplyAll">Все услуги на одной странице</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#onewindow" class="nav__link" data-i18n="navOnewindow">Единое окно</a></li>
+            <li><a href="index.html#services" class="nav__link" data-i18n="navServices">Услуги</a></li>
+            <li><a href="index.html#contacts" class="nav__link" data-i18n="navContacts">Контакты</a></li>
+            <li><a href="index.html#news" class="nav__link" data-i18n="navNews">Новости</a></li>
+            <li><a href="index.html#vacancies" class="nav__link" data-i18n="navVacancies">Объявления и вакансии</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section section--visible">
+      <div class="container section-block animate-in">
+        <p class="online-page-back u-mb-sm"><a href="index.html#apply" class="inline-action" data-i18n="applyBackToHub">← К списку онлайн-услуг</a></p>
+        <article class="card online-service-card">
+            <h3 class="card__title" data-i18n="onlineSvc2Title">2. Разрешение на строительство</h3>
+            <div class="online-service-form-wrap">
+              <p class="online-service-card__lead" data-i18n="bldFormIntroLead">Разрешение на строительство</p>
+              <p class="card__text card__text--muted" data-i18n="bldFormSubheading">Форма: разрешение на строительство</p>
+              <p class="card__text card__text--muted online-service-form-hint" data-i18n="bldFormIntro">После отправки вы получите номер заявки.</p>
+              <form id="form-building" class="form online-service-form proj-form" novalidate>
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="bldSectionApplicant">Данные заявителя</p>
+                  <div class="form__group">
+                    <label for="bld-fio" class="form__label" data-i18n="bldFieldFio">ФИО заявителя *</label>
+                    <input type="text" id="bld-fio" name="fio" class="form__input" autocomplete="name" required minlength="5">
+                    <span class="form__error" id="error-bld-fio"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-pin" class="form__label" data-i18n="bldFieldPin">ПИН / ИНН</label>
+                    <input type="text" id="bld-pin" name="pin" class="form__input" maxlength="20">
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-phone" class="form__label" data-i18n="bldFieldPhone">Номер телефона *</label>
+                    <input type="tel" id="bld-phone" name="phone" class="form__input" autocomplete="tel" required inputmode="tel" placeholder="+996 555 12 34 56">
+                    <span class="form__error" id="error-bld-phone"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-email" class="form__label" data-i18n="bldFieldEmail">Email</label>
+                    <input type="email" id="bld-email" name="email" class="form__input" autocomplete="email">
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-residence" class="form__label" data-i18n="bldFieldResidence">Адрес проживания</label>
+                    <input type="text" id="bld-residence" name="residence" class="form__input" maxlength="500">
+                  </div>
+                </div>
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="bldSectionObject">Информация об объекте строительства</p>
+                  <div class="form__group">
+                    <label for="bld-obj-address" class="form__label" data-i18n="bldObjAddress">Адрес объекта *</label>
+                    <input type="text" id="bld-obj-address" name="obj_address" class="form__input" required minlength="3" maxlength="500">
+                    <span class="form__error" id="error-bld-obj-address"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-obj-type" class="form__label" data-i18n="bldObjType">Тип объекта</label>
+                    <select id="bld-obj-type" name="obj_type" class="form__input" required>
+                      <option value="" data-i18n="bldObjPlaceholder">— Выберите тип —</option>
+                      <option value="house" data-i18n="bldObjHouse">Жилой дом</option>
+                      <option value="commercial" data-i18n="bldObjCommercial">Коммерческое здание</option>
+                      <option value="shop" data-i18n="bldObjShop">Магазин</option>
+                      <option value="office" data-i18n="bldObjOffice">Офис</option>
+                      <option value="industrial" data-i18n="bldObjIndustrial">Производственный объект</option>
+                      <option value="other" data-i18n="bldObjOther">Другое</option>
+                    </select>
+                    <span class="form__error" id="error-bld-obj-type"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-obj-purpose" class="form__label" data-i18n="bldObjPurpose">Назначение объекта</label>
+                    <input type="text" id="bld-obj-purpose" name="obj_purpose" class="form__input" maxlength="300">
+                  </div>
+                  <div class="form__row form__row--2">
+                    <div class="form__group">
+                      <label for="bld-obj-floors" class="form__label" data-i18n="bldObjFloors">Количество этажей</label>
+                      <input type="text" id="bld-obj-floors" name="obj_floors" class="form__input" inputmode="numeric" maxlength="10">
+                    </div>
+                    <div class="form__group">
+                      <label for="bld-obj-area" class="form__label" data-i18n="bldObjArea">Общая площадь (м²)</label>
+                      <input type="text" id="bld-obj-area" name="obj_area" class="form__input" maxlength="20">
+                    </div>
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-obj-cadastre" class="form__label" data-i18n="bldObjCadastre">Кадастровый номер участка</label>
+                    <input type="text" id="bld-obj-cadastre" name="obj_cadastre" class="form__input" maxlength="80">
+                  </div>
+                </div>
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="bldSectionLand">Информация о земельном участке</p>
+                  <div class="form__group">
+                    <label for="bld-land-right" class="form__label" data-i18n="bldLandRight">Вид права на участок</label>
+                    <select id="bld-land-right" name="land_right" class="form__input" required>
+                      <option value="" data-i18n="bldLandPlaceholder">— Выберите —</option>
+                      <option value="ownership" data-i18n="bldLandOwnership">Собственность</option>
+                      <option value="lease" data-i18n="bldLandLease">Аренда</option>
+                      <option value="other" data-i18n="bldLandOther">Другое</option>
+                    </select>
+                    <span class="form__error" id="error-bld-land-right"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-land-area" class="form__label" data-i18n="bldLandArea">Площадь земельного участка</label>
+                    <input type="text" id="bld-land-area" name="land_area" class="form__input" maxlength="30">
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-land-purpose" class="form__label" data-i18n="bldLandPurpose">Целевое назначение земли</label>
+                    <input type="text" id="bld-land-purpose" name="land_purpose" class="form__input" maxlength="300">
+                  </div>
+                </div>
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="bldSectionProject">Информация о проекте</p>
+                  <div class="form__group">
+                    <label for="bld-proj-title" class="form__label" data-i18n="bldProjTitle">Название проекта</label>
+                    <input type="text" id="bld-proj-title" name="proj_title" class="form__input" maxlength="300">
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-proj-org" class="form__label" data-i18n="bldProjOrg">Проектная организация</label>
+                    <input type="text" id="bld-proj-org" name="proj_org" class="form__input" maxlength="300">
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-proj-engineer" class="form__label" data-i18n="bldProjEngineer">Архитектор / инженер</label>
+                    <input type="text" id="bld-proj-engineer" name="proj_engineer" class="form__input" maxlength="200">
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-proj-number" class="form__label" data-i18n="bldProjNumber">Номер проекта</label>
+                    <input type="text" id="bld-proj-number" name="proj_number" class="form__input" maxlength="80">
+                  </div>
+                </div>
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="bldSectionDocs">Загрузка документов</p>
+                  <p class="form__hint" data-i18n="bldDocsLead">Прикрепить файлы</p>
+                  <div class="form__group">
+                    <label for="bld-file-passport" class="form__label" data-i18n="bldDocPassport">Паспорт заявителя *</label>
+                    <input type="file" id="bld-file-passport" name="file_passport" class="form__input form__input--file">
+                    <span class="form__error" id="error-bld-passport"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-file-land" class="form__label" data-i18n="bldDocLand">Документ на земельный участок</label>
+                    <input type="file" id="bld-file-land" name="file_land" class="form__input form__input--file">
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-file-arch" class="form__label" data-i18n="bldDocArch">Архитектурный проект *</label>
+                    <input type="file" id="bld-file-arch" name="file_arch" class="form__input form__input--file">
+                    <span class="form__error" id="error-bld-arch"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-file-tech" class="form__label" data-i18n="bldDocTechCond">Технические условия</label>
+                    <input type="file" id="bld-file-tech" name="file_tech" class="form__input form__input--file">
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-file-sketch" class="form__label" data-i18n="bldDocSketch">Эскиз / чертёж</label>
+                    <input type="file" id="bld-file-sketch" name="file_sketch" class="form__input form__input--file">
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-file-doc-receipt" class="form__label" data-i18n="bldDocReceipt">Квитанция об оплате</label>
+                    <input type="file" id="bld-file-doc-receipt" name="file_doc_receipt" class="form__input form__input--file">
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-file-urban" class="form__label" data-i18n="bldDocUrban">Градостроительное заключение</label>
+                    <input type="file" id="bld-file-urban" name="file_urban" class="form__input form__input--file">
+                  </div>
+                </div>
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="bldSectionWorks">Тип строительных работ</p>
+                  <div class="form__group">
+                    <label for="bld-work-type" class="form__label" data-i18n="bldWorkType">Тип работ</label>
+                    <select id="bld-work-type" name="work_type" class="form__input" required>
+                      <option value="" data-i18n="bldWorkPlaceholder">— Выберите тип работ —</option>
+                      <option value="new" data-i18n="bldWorkNew">Новое строительство</option>
+                      <option value="recon" data-i18n="bldWorkRecon">Реконструкция</option>
+                      <option value="extension" data-i18n="bldWorkExtension">Пристройка</option>
+                      <option value="replan" data-i18n="bldWorkReplan">Перепланировка</option>
+                      <option value="repair" data-i18n="bldWorkRepair">Капитальный ремонт</option>
+                    </select>
+                    <span class="form__error" id="error-bld-work-type"></span>
+                  </div>
+                </div>
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="bldSectionSchedule">Сроки строительства</p>
+                  <div class="form__row form__row--2">
+                    <div class="form__group">
+                      <label for="bld-date-start" class="form__label" data-i18n="bldDateStart">Планируемая дата начала</label>
+                      <input type="date" id="bld-date-start" name="date_start" class="form__input">
+                    </div>
+                    <div class="form__group">
+                      <label for="bld-date-end" class="form__label" data-i18n="bldDateEnd">Планируемая дата завершения</label>
+                      <input type="date" id="bld-date-end" name="date_end" class="form__input">
+                    </div>
+                  </div>
+                </div>
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="bldSectionExtra">Дополнительная информация</p>
+                  <div class="form__group">
+                    <label for="bld-comment" class="form__label" data-i18n="bldComment">Комментарий / описание проекта</label>
+                    <textarea id="bld-comment" name="comment" class="form__input form__textarea" rows="3" maxlength="4000"></textarea>
+                  </div>
+                </div>
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="bldSectionPay">Оплата услуги</p>
+                  <div class="form__group">
+                    <label for="bld-payment" class="form__label" data-i18n="bldPayLabel">Способ оплаты</label>
+                    <select id="bld-payment" name="payment" class="form__input" required>
+                      <option value="" data-i18n="bldPayPlaceholder">— Выберите способ оплаты —</option>
+                      <option value="elcart" data-i18n="bldPayElcart">Элкарт</option>
+                      <option value="mbank" data-i18n="bldPayMbank">MBank</option>
+                      <option value="omoney" data-i18n="bldPayOmoney">О! Деньги</option>
+                      <option value="megapay" data-i18n="bldPayMegapay">MegaPay</option>
+                      <option value="card" data-i18n="bldPayCard">Visa / MasterCard</option>
+                    </select>
+                    <span class="form__error" id="error-bld-payment"></span>
+                  </div>
+                  <div class="apz-payment-block">
+                    <p class="online-service-card__lead" data-i18n="bldQrTitle">Оплата государственной пошлины (QR-код)</p>
+                    <p class="card__text card__text--muted apz-payment-block__caption" data-i18n="bldQrCaption">Отсканируйте QR-код в приложении MBank или О! Деньги, оплатите пошлину, затем прикрепите подтверждение ниже.</p>
+                    <figure class="apz-payment-qr">
+                      <img id="bld-qr-image" src="images/gosposhlina-qr.png" alt="" width="240" height="240" loading="lazy">
+                    </figure>
+                  </div>
+                  <div class="form__group">
+                    <label for="bld-service-receipt" class="form__label" data-i18n="bldServiceReceipt">Подтверждение оплаты услуги (файл) *</label>
+                    <input type="file" id="bld-service-receipt" name="service_receipt" class="form__input form__input--file" accept="image/*,.pdf,application/pdf" required>
+                    <span class="form__hint" data-i18n="bldServiceReceiptHint">Квитанция или чек после оплаты.</span>
+                    <span class="form__error" id="error-bld-service-receipt"></span>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <label class="form__checkbox-label">
+                      <input type="checkbox" id="bld-fee" name="fee" required>
+                      <span data-i18n="bldFieldFee">Подтверждаю оплату</span>
+                    </label>
+                    <span class="form__error" id="error-bld-fee"></span>
+                  </div>
+                </div>
+                <div class="form__actions form__actions--row">
+                  <button type="submit" class="btn btn--primary" data-i18n="bldSubmit">Подать заявку</button>
+                  <button type="button" class="btn btn--outline" id="bld-reset" data-i18n="bldClearForm">Очистить форму</button>
+                </div>
+              </form>
+              <div id="bld-result" class="apz-result card hidden" hidden>
+                <p class="apz-result__title" data-i18n="bldSuccessTitle">Заявка принята</p>
+                <p class="apz-result__id"><span data-i18n="bldSuccessNumberLabel">Номер заявки:</span> <strong id="bld-id-display"></strong></p>
+                <p class="apz-result__hint" data-i18n="bldSuccessHint">Данные сохранены.</p>
+                <p class="apz-result__link"><a href="index.html#status" class="inline-action" data-i18n="bldLinkStatus">Перейти к проверке статуса</a></p>
+              </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footerBrandTitle">ТРУА</h3>
+        <p class="footer__text" data-i18n="footerDisclosure">Официальная информация.</p>
+        <p class="footer__copy" data-i18n="footerCopy">© ТРУА</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footerContacts">Контакты</h3>
+        <p class="footer__text"><strong data-i18n="footerAddressLabel">Адрес:</strong> <span data-i18n="footerAddressValue">г. Талас</span></p>
+        <p class="footer__text"><strong data-i18n="footerPhoneLabel">Телефон:</strong> <a href="tel:+996000000000">+996 (000) 00-00-00</a></p>
+      </div>
+      <div class="footer__col footer__col--links">
+        <h3 class="footer__title" data-i18n="footerSections">Разделы</h3>
+        <ul class="footer__links">
+          <li><a href="index.html#services" data-i18n="footerLinkServices">Услуги</a></li>
+          <li><a href="index.html#apply" data-i18n="footerLinkCitizen">Обращения граждан</a></li>
+          <li><a href="index.html#status" data-i18n="footerLinkStatus">Проверка статуса заявки</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

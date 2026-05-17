@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТРУА</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-static-page="onlineProject">
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+  <header class="header">
+    <div class="header__aux">
+      <div class="container header__aux-inner">
+        <div class="header__aux-left">
+          <span class="header__portal">Официальный портал</span>
+          <span class="header__region">Таласская область, Кыргызская Республика</span>
+        </div>
+        <div class="header__aux-right">
+          <a href="https://www.gov.kg/ky/information/stopcorruption" class="header__anti-corruption" target="_blank" rel="noopener noreferrer">Стоп коррупция</a>
+          <div class="lang-switcher" role="group" aria-label="Язык интерфейса">
+            <button type="button" class="lang-btn is-active" data-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" class="lang-btn" data-lang="ky" aria-pressed="false">KY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__brand">
+      <div class="container header__brand-inner">
+        <a href="index.html#home" class="logo-mark" aria-label="ТРУА — на главную">ТРУА</a>
+        <h1 class="header__sitename">Таласское районное управление по градостроительству и архитектуре</h1>
+      </div>
+    </div>
+    <div class="header__nav-wrap">
+      <div class="container header__nav-row">
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="main-nav" aria-label="Основное меню">
+          <ul class="nav__list">
+            <li><a href="index.html#home" class="nav__link" data-i18n="navHome">Главная</a></li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button type="button" class="nav__link nav__dropdown-toggle" id="about-dropdown-toggle" aria-expanded="false" aria-controls="about-dropdown-menu" data-i18n="navAbout">О нас</button>
+              <ul class="nav__dropdown" id="about-dropdown-menu">
+                <li><a href="index.html#about" class="nav__dropdown-link" data-about-target="about-leaders" data-i18n="navAboutLeaders">Руководители</a></li>
+                <li><a href="documents.html" class="nav__dropdown-link" data-i18n="navAboutDocuments">Нормативно-правовые документы</a></li>
+                <li><a href="history.html" class="nav__dropdown-link" data-i18n="navAboutHistory">История создания Таласской архитектуры</a></li>
+                <li><a href="photos.html" class="nav__dropdown-link" data-i18n="navAboutPhotos">Фотогалерея</a></li>
+                <li><a href="videos.html" class="nav__dropdown-link" data-i18n="navAboutVideos">Видеогалерея</a></li>
+                <li><a href="honor.html" class="nav__dropdown-link" data-i18n="navAboutHonor">Доска почета</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#projects" class="nav__link" data-i18n="navProjects">Проекты</a></li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button type="button" class="nav__link nav__dropdown-toggle" id="apply-dropdown-toggle" aria-expanded="false" aria-controls="apply-dropdown-menu" data-i18n="navApply">Онлайн-услуги</button>
+              <ul class="nav__dropdown" id="apply-dropdown-menu">
+                <li><a href="online-apz.html" class="nav__dropdown-link" data-i18n="navOnlineApz">Подача заявки на АПЗ</a></li>
+                <li><a href="online-building.html" class="nav__dropdown-link" data-i18n="navOnlineBuilding">Разрешение на строительство</a></li>
+                <li><a href="online-project.html" class="nav__dropdown-link" data-i18n="navOnlineProject">Согласование проекта</a></li>
+                <li><a href="online-topo.html" class="nav__dropdown-link" data-i18n="navOnlineTopo">Топографическая съёмка</a></li>
+                <li><a href="index.html#apply" class="nav__dropdown-link" data-i18n="navApplyAll">Все услуги на одной странице</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#onewindow" class="nav__link" data-i18n="navOnewindow">Единое окно</a></li>
+            <li><a href="index.html#services" class="nav__link" data-i18n="navServices">Услуги</a></li>
+            <li><a href="index.html#contacts" class="nav__link" data-i18n="navContacts">Контакты</a></li>
+            <li><a href="index.html#news" class="nav__link" data-i18n="navNews">Новости</a></li>
+            <li><a href="index.html#vacancies" class="nav__link" data-i18n="navVacancies">Объявления и вакансии</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section section--visible">
+      <div class="container section-block animate-in">
+        <p class="online-page-back u-mb-sm"><a href="index.html#apply" class="inline-action" data-i18n="applyBackToHub">← К списку онлайн-услуг</a></p>
+        <article class="card online-service-card">
+            <h3 class="card__title" data-i18n="onlineSvc3Title">3. Согласование проекта</h3>
+            <div class="online-service-form-wrap">
+              <p class="online-service-card__lead" data-i18n="projFormIntroLead">Согласование проекта</p>
+              <p class="card__text card__text--muted" data-i18n="projFormSubheading">Форма: согласование проекта</p>
+              <p class="card__text card__text--muted online-service-form-hint" data-i18n="projFormIntro">Электронная форма для подачи комплекта документов.</p>
+              <form id="form-proj" class="form online-service-form proj-form" novalidate>
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="projSectionApplicant">1. Данные заявителя</p>
+                  <div class="form__group">
+                    <label for="proj-fio" class="form__label" data-i18n="projFieldFio">ФИО *</label>
+                    <input type="text" id="proj-fio" name="fio" class="form__input" autocomplete="name" required minlength="5">
+                    <span class="form__error" id="error-proj-fio"></span>
+                  </div>
+                  <fieldset class="form__group form__fieldset">
+                    <legend class="form__label" data-i18n="projApplicantType">Тип заявителя</legend>
+                    <label class="form__radio-label"><input type="radio" name="proj-applicant-type" value="person" checked> <span data-i18n="projApplicantPerson">Физическое лицо</span></label>
+                    <label class="form__radio-label"><input type="radio" name="proj-applicant-type" value="legal"> <span data-i18n="projApplicantLegal">Юридическое лицо</span></label>
+                  </fieldset>
+                  <div id="proj-legal-fields" class="proj-legal-fields" hidden>
+                    <div class="form__group">
+                      <label for="proj-org-name" class="form__label" data-i18n="projOrgName">Название организации</label>
+                      <input type="text" id="proj-org-name" name="org" class="form__input" autocomplete="organization">
+                      <span class="form__error" id="error-proj-org"></span>
+                    </div>
+                    <div class="form__group">
+                      <label for="proj-inn" class="form__label" data-i18n="projInn">ИНН</label>
+                      <input type="text" id="proj-inn" name="inn" class="form__input" inputmode="numeric" maxlength="14">
+                      <span class="form__error" id="error-proj-inn"></span>
+                    </div>
+                  </div>
+                  <div class="form__group">
+                    <label for="proj-phone" class="form__label" data-i18n="projFieldPhone">Номер телефона *</label>
+                    <input type="tel" id="proj-phone" name="phone" class="form__input" autocomplete="tel" required inputmode="numeric" placeholder="+996 555 12 34 56">
+                    <span class="form__error" id="error-proj-phone"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="proj-email" class="form__label" data-i18n="projFieldEmail">Email</label>
+                    <input type="email" id="proj-email" name="email" class="form__input" autocomplete="email">
+                  </div>
+                </div>
+
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="projSectionObject">2. Информация об объекте</p>
+                  <div class="form__group">
+                    <label for="proj-project-title" class="form__label" data-i18n="projProjectTitle">Название проекта *</label>
+                    <input type="text" id="proj-project-title" name="project_title" class="form__input" required minlength="3" maxlength="500">
+                    <span class="form__error" id="error-proj-title"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="proj-object-type" class="form__label" data-i18n="projObjectType">Тип объекта</label>
+                    <select id="proj-object-type" name="object_type" class="form__input" required>
+                      <option value="" data-i18n="projObjectPlaceholder">— Выберите тип объекта —</option>
+                      <option value="house" data-i18n="projObjTypeHouse">Жилой дом</option>
+                      <option value="commercial" data-i18n="projObjTypeCommercial">Коммерческий объект</option>
+                      <option value="shop" data-i18n="projObjTypeShop">Магазин</option>
+                      <option value="office" data-i18n="projObjTypeOffice">Офис</option>
+                      <option value="apartment" data-i18n="projObjTypeApartment">Многоквартирный дом</option>
+                      <option value="recon" data-i18n="projObjTypeRecon">Реконструкция</option>
+                      <option value="other" data-i18n="projObjTypeOther">Другое</option>
+                    </select>
+                    <span class="form__error" id="error-proj-object-type"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="proj-address" class="form__label" data-i18n="projAddress">Адрес объекта *</label>
+                    <input type="text" id="proj-address" name="address" class="form__input" required minlength="3" maxlength="500">
+                    <span class="form__error" id="error-proj-address"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="proj-cadastre" class="form__label" data-i18n="projCadastre">Кадастровый номер участка</label>
+                    <input type="text" id="proj-cadastre" name="cadastre" class="form__input" maxlength="80">
+                  </div>
+                  <div class="form__row form__row--2">
+                    <div class="form__group">
+                      <label for="proj-area" class="form__label" data-i18n="projArea">Площадь объекта (м²)</label>
+                      <input type="text" id="proj-area" name="area" class="form__input" inputmode="decimal" maxlength="20">
+                    </div>
+                    <div class="form__group">
+                      <label for="proj-floors" class="form__label" data-i18n="projFloors">Количество этажей</label>
+                      <input type="text" id="proj-floors" name="floors" class="form__input" inputmode="numeric" maxlength="10">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="projSectionDocs">3. Документы</p>
+                  <p class="form__hint" data-i18n="projDocsLead">Загрузка файлов</p>
+                  <div class="form__group">
+                    <label for="proj-file-arch" class="form__label" data-i18n="projDocArch">Архитектурный проект (PDF/DWG) *</label>
+                    <input type="file" id="proj-file-arch" name="file_arch" class="form__input form__input--file" accept=".pdf,.dwg,.dxf,image/*,application/pdf">
+                    <span class="form__error" id="error-proj-arch"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="proj-file-tech" class="form__label" data-i18n="projDocTech">Технический паспорт</label>
+                    <input type="file" id="proj-file-tech" name="file_tech" class="form__input form__input--file">
+                  </div>
+                  <div class="form__group">
+                    <label for="proj-file-land" class="form__label" data-i18n="projDocLand">Документ на земельный участок</label>
+                    <input type="file" id="proj-file-land" name="file_land" class="form__input form__input--file">
+                  </div>
+                  <div class="form__group">
+                    <label for="proj-file-id-doc" class="form__label" data-i18n="projDocId">Паспорт заявителя</label>
+                    <input type="file" id="proj-file-id-doc" name="file_id" class="form__input form__input--file">
+                  </div>
+                  <div class="form__group">
+                    <label for="proj-file-extra" class="form__label" data-i18n="projDocExtra">Дополнительные документы</label>
+                    <input type="file" id="proj-file-extra" name="file_extra" class="form__input form__input--file" multiple>
+                  </div>
+                </div>
+
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="projSectionExtra">4. Дополнительная информация</p>
+                  <div class="form__group">
+                    <label for="proj-comment" class="form__label" data-i18n="projFieldComment">Комментарий</label>
+                    <textarea id="proj-comment" name="comment" class="form__input form__textarea" rows="3" maxlength="2000"></textarea>
+                  </div>
+                  <div class="form__group">
+                    <label for="proj-special" class="form__label" data-i18n="projSpecialLabel">Особые требования</label>
+                    <textarea id="proj-special" name="special" class="form__input form__textarea" rows="2" maxlength="2000"></textarea>
+                  </div>
+                </div>
+
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="projSectionDate">5. Дата подачи</p>
+                  <p class="card__text card__text--muted"><time id="proj-submit-date" datetime="">—</time>. <span data-i18n="projDateNote">Фиксируется автоматически при отправке формы.</span></p>
+                </div>
+
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="projQrTitle">Оплата государственной пошлины</p>
+                  <div class="apz-payment-block">
+                    <p class="card__text card__text--muted apz-payment-block__caption" data-i18n="projQrCaption">Отсканируйте QR-код в приложении MBank или О! Деньги, оплатите пошлину, затем прикрепите чек ниже.</p>
+                    <figure class="apz-payment-qr">
+                      <img id="proj-qr-image" src="images/gosposhlina-qr.png" alt="" width="240" height="240" loading="lazy">
+                    </figure>
+                  </div>
+                  <div class="form__group">
+                    <label for="proj-receipt" class="form__label" data-i18n="projFieldReceipt">Чек об оплате *</label>
+                    <input type="file" id="proj-receipt" name="receipt" class="form__input form__input--file" accept="image/*,.pdf,application/pdf" required>
+                    <span class="form__hint" data-i18n="projReceiptHint">Фото или PDF чека из банковского приложения.</span>
+                    <span class="form__error" id="error-proj-receipt"></span>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <label class="form__checkbox-label">
+                      <input type="checkbox" id="proj-fee" name="fee" required>
+                      <span data-i18n="projFieldFee">Подтверждаю оплату</span>
+                    </label>
+                    <span class="form__error" id="error-proj-fee"></span>
+                  </div>
+                </div>
+
+                <div class="form__actions form__actions--row">
+                  <button type="submit" class="btn btn--primary" data-i18n="projSubmit">Отправить заявку</button>
+                  <button type="button" class="btn btn--outline" id="proj-reset" data-i18n="projClearForm">Очистить форму</button>
+                </div>
+              </form>
+              <div id="proj-result" class="apz-result card hidden" hidden>
+                <p class="apz-result__title" data-i18n="projSuccessTitle">Заявка принята</p>
+                <p class="apz-result__id"><span data-i18n="projSuccessNumberLabel">Номер заявки:</span> <strong id="proj-id-display"></strong></p>
+                <p class="apz-result__hint" data-i18n="projSuccessHint">Данные сохранены.</p>
+                <p class="apz-result__link"><a href="index.html#status" class="inline-action" data-i18n="projLinkStatus">Перейти к проверке статуса</a></p>
+              </div>
+            </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footerBrandTitle">ТРУА</h3>
+        <p class="footer__text" data-i18n="footerDisclosure">Официальная информация.</p>
+        <p class="footer__copy" data-i18n="footerCopy">© ТРУА</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footerContacts">Контакты</h3>
+        <p class="footer__text"><strong data-i18n="footerAddressLabel">Адрес:</strong> <span data-i18n="footerAddressValue">г. Талас</span></p>
+        <p class="footer__text"><strong data-i18n="footerPhoneLabel">Телефон:</strong> <a href="tel:+996000000000">+996 (000) 00-00-00</a></p>
+      </div>
+      <div class="footer__col footer__col--links">
+        <h3 class="footer__title" data-i18n="footerSections">Разделы</h3>
+        <ul class="footer__links">
+          <li><a href="index.html#services" data-i18n="footerLinkServices">Услуги</a></li>
+          <li><a href="index.html#apply" data-i18n="footerLinkCitizen">Обращения граждан</a></li>
+          <li><a href="index.html#status" data-i18n="footerLinkStatus">Проверка статуса заявки</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

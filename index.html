@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ТРУА — Таласское районное управление по градостроительству и архитектуре. Официальный портал.">
+  <title>ТРУА — Таласское районное управление по градостроительству и архитектуре</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <header class="header">
+    <div class="header__aux">
+      <div class="container header__aux-inner">
+        <div class="header__aux-left">
+          <span class="header__portal">Официальный портал</span>
+          <span class="header__region">Таласская область, Кыргызская Республика</span>
+        </div>
+        <div class="header__aux-right">
+          <a href="https://www.gov.kg/ky/information/stopcorruption" class="header__anti-corruption" target="_blank" rel="noopener noreferrer">Стоп коррупция</a>
+          <div class="lang-switcher" role="group" aria-label="Язык интерфейса">
+            <button type="button" class="lang-btn is-active" data-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" class="lang-btn" data-lang="ky" aria-pressed="false">KY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__brand">
+      <div class="container header__brand-inner">
+        <a href="#home" class="logo-mark" data-nav="home" aria-label="ТРУА — на главную">ТРУА</a>
+        <h1 class="header__sitename">Таласское районное управление по градостроительству и архитектуре</h1>
+      </div>
+    </div>
+
+    <div class="header__nav-wrap">
+      <div class="container header__nav-row">
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="main-nav" aria-label="Основное меню">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link" data-nav="home">Главная</a></li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button type="button" class="nav__link nav__dropdown-toggle" id="about-dropdown-toggle" aria-expanded="false" aria-controls="about-dropdown-menu" data-i18n="navAbout">О нас</button>
+              <ul class="nav__dropdown" id="about-dropdown-menu">
+                <li><a href="#about" class="nav__dropdown-link" data-nav="about" data-about-target="about-leaders" data-i18n="navAboutLeaders">Руководители</a></li>
+                <li><a href="documents.html" class="nav__dropdown-link" data-i18n="navAboutDocuments">Нормативно-правовые документы</a></li>
+                <li><a href="history.html" class="nav__dropdown-link" data-i18n="navAboutHistory">История создания Таласской архитектуры</a></li>
+                <li><a href="photos.html" class="nav__dropdown-link" data-i18n="navAboutPhotos">Фотогалерея</a></li>
+                <li><a href="videos.html" class="nav__dropdown-link" data-i18n="navAboutVideos">Видеогалерея</a></li>
+                <li><a href="honor.html" class="nav__dropdown-link" data-i18n="navAboutHonor">Доска почета</a></li>
+              </ul>
+            </li>
+            <li><a href="#projects" class="nav__link" data-nav="projects">Проекты</a></li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button type="button" class="nav__link nav__dropdown-toggle" id="apply-dropdown-toggle" aria-expanded="false" aria-controls="apply-dropdown-menu" data-i18n="navApply">Онлайн-услуги</button>
+              <ul class="nav__dropdown" id="apply-dropdown-menu">
+                <li><a href="online-apz.html" class="nav__dropdown-link" data-i18n="navOnlineApz">Подача заявки на АПЗ</a></li>
+                <li><a href="online-building.html" class="nav__dropdown-link" data-i18n="navOnlineBuilding">Разрешение на строительство</a></li>
+                <li><a href="online-project.html" class="nav__dropdown-link" data-i18n="navOnlineProject">Согласование проекта</a></li>
+                <li><a href="online-topo.html" class="nav__dropdown-link" data-i18n="navOnlineTopo">Топографическая съёмка</a></li>
+                <li><a href="#apply" class="nav__dropdown-link" data-nav="apply" data-i18n="navApplyAll">Все услуги на одной странице</a></li>
+              </ul>
+            </li>
+            <li><a href="#onewindow" class="nav__link" data-nav="onewindow">Единое окно</a></li>
+            <li><a href="#services" class="nav__link" data-nav="services">Услуги</a></li>
+            <li><a href="#contacts" class="nav__link" data-nav="contacts">Контакты</a></li>
+            <li><a href="#news" class="nav__link" data-nav="news">Новости</a></li>
+            <li><a href="#vacancies" class="nav__link" data-nav="vacancies">Объявления и вакансии</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Home -->
+    <section id="section-home" class="section section--visible" data-section="home">
+      <div class="container section-block animate-in">
+        <h2 class="section__heading"></h2>
+        <div class="news-showcase">
+          <div class="news-showcase__left card">
+            <div class="news-slider" id="news-slider">
+              <div class="news-slider__track" id="news-slider-track">
+                <article class="news-slider__slide">
+                  <img src="images/slide-1.png" alt="Уважаемые кыргызстанцы!">
+                  <div class="news-slider__overlay">
+                    <span class="news-slider__badge" data-i18n="newsBadge">Новости</span>
+                    <h3 class="news-slider__title">Начальник Таласского областного управления градостроительства и архитектуры уточнил границы земельного участка, отведенного под строительство новой школы</h3>
+                    <time datetime="2026-05-05">5 мая 2026</time>
+                  </div>
+                </article>
+                <article class="news-slider__slide">
+                  <img src="images/slide-2.png" alt="Чистый контур города">
+                  <div class="news-slider__overlay">
+                    <span class="news-slider__badge" data-i18n="newsBadge">Новости</span>
+                    <h3 class="news-slider__title">Чистый контур города</h3>
+                    <time datetime="2026-04-20">20 апреля 2026</time>
+                  </div>
+                </article>
+                <article class="news-slider__slide">
+                  <img src="images/slide-3.png" alt="Доверенность на представительство">
+                  <div class="news-slider__overlay">
+                    <span class="news-slider__badge" data-i18n="newsBadge">Новости</span>
+                    <h3 class="news-slider__title">Доверенность на представительство</h3>
+                    <time datetime="2026-04-12">12 апреля 2026</time>
+                  </div>
+                </article>
+                <article class="news-slider__slide">
+                  <img src="images/slide-4.png" alt="Фасады приводятся в порядок">
+                  <div class="news-slider__overlay">
+                    <span class="news-slider__badge" data-i18n="newsBadge">Новости</span>
+                    <h3 class="news-slider__title">Фасады приводятся в порядок</h3>
+                    <time datetime="2026-04-01">1 апреля 2026</time>
+                  </div>
+                </article>
+              </div>
+              <button class="news-slider__arrow news-slider__arrow--prev" id="news-slider-prev" type="button" aria-label="Предыдущая новость"></button>
+              <button class="news-slider__arrow news-slider__arrow--next" id="news-slider-next" type="button" aria-label="Следующая новость"></button>
+            </div>
+          </div>
+
+          <aside class="news-showcase__right">
+            <button type="button" class="news-list-item is-active" data-news-index="0">
+              <img src="images/slide-1.png" alt="">
+              <div>
+                <span>Новости</span>
+                <p>Уточнены границы участка под строительство новой школы</p>
+              </div>
+            </button>
+            <button type="button" class="news-list-item" data-news-index="1">
+              <img src="images/slide-2.png" alt="">
+              <div>
+                <span>Новости</span>
+                <p>Чистый контур города</p>
+              </div>
+            </button>
+            <button type="button" class="news-list-item" data-news-index="2">
+              <img src="images/slide-3.png" alt="">
+              <div>
+                <span>Новости</span>
+                <p>Доверенность на представительство</p>
+              </div>
+            </button>
+            <button type="button" class="news-list-item" data-news-index="3">
+              <img src="images/slide-4.png" alt="">
+              <div>
+                <span>Новости</span>
+                <p>Бишкек: фасады приводятся в порядок</p>
+              </div>
+            </button>
+          </aside>
+        </div>
+      </div>
+
+      <div class="container section-block animate-in">
+        <h2 class="section__heading">Краткая информация</h2>
+        <div class="cards cards--3">
+          <article class="card">
+            <h3 class="card__title">Наша миссия</h3>
+            <p class="card__text">Содействие устойчивому развитию территорий и соблюдению норм градостроительства на подведомственной территории.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Для граждан</h3>
+            <p class="card__text">Онлайн-услуги: подача заявлений и прозрачная проверка статуса рассмотрения документов.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Режим работы</h3>
+            <p class="card__text">Пн–Пт: 9:00–18:00, обед 12:00–13:00. Личный приём — по предварительной записи.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="section-about" class="section" data-section="about">
+      <div class="container section-block animate-in">
+        <h2 class="section__heading" id="about-leaders" data-i18n="leadersHeading">Руководители</h2>
+        <div class="about-intro card u-mb-sm">
+          <p class="card__text" data-i18n="aboutP1">Таласское районное управление по градостроительству и архитектуре (ТРУА) — государственный орган, уполномоченный на осуществление полномочий в сфере градостроительства и архитектуры на территории Таласской области.</p>
+          <p class="card__text" data-i18n="aboutP2">Управление взаимодействует с застройщиками, проектными организациями и органами местного самоуправления в целях соблюдения законодательства Кыргызской Республики.</p>
+        </div>
+        <div class="leaders-list">
+          <article class="leader-row">
+            <img src="./images/leader-template.png" alt="Токтосунов Асельбек Асанбекович" class="leader-row__img">
+            <div class="leader-row__info">
+              <h4 class="leader-row__name">Токтосунов Асельбек Асанбекович</h4>
+              <p class="leader-row__role" data-i18n="leaderToktRole">Начальник</p>
+              <p class="leader-row__position" data-i18n="leaderToktPosition">Руководство</p>
+              <p class="leader-row__detail" data-i18n="leaderToktDetail">Образование: 1993–1998 Кыргызский национальный университет им. Ж. Баласагына, юриспруденция</p>
+            </div>
+          </article>
+          <article class="leader-row">
+            <img src="images/baibagyshev-kubanychbek.png" alt="Байбагышев Кубанычбек Солтонович" class="leader-row__img">
+            <div class="leader-row__info">
+              <h4 class="leader-row__name">Байбагышев Кубанычбек Солтонович</h4>
+              <p class="leader-row__role" data-i18n="leaderBaibRole">Главный бухгалтер</p>
+              <p class="leader-row__position" data-i18n="leaderBaibPosition">Служба бухгалтерского учёта и отчётности</p>
+              <p class="leader-row__detail" data-i18n="leaderBaibDetail">Образование: 1992–1994 Бишкекский кооперативный техникум, бухгалтерский учёт; 2003–2005 Кыргызско-Российский славянский университет, бухгалтерский учёт и аудит</p>
+            </div>
+          </article>
+          <!-- <article class="leader-row">
+            <img src="images/leader-template.png" alt="Момунбек кызы Айгүл" class="leader-row__img">
+            <div class="leader-row__info">
+              <h4 class="leader-row__name">Момунбек кызы Айгүл</h4>
+              <p class="leader-row__role">Главный специалист</p>
+              <p class="leader-row__position">Отдел · Классный чин: советник госслужбы</p>
+              <p class="leader-row__detail">Образование: 1996–2000 КГНУ им. Ж. Баласагына, факультет иностранных языков; 2004–2006 КГНУ им. Ж. Баласагына, экономист</p>
+            </div>
+          </article> -->
+          <!-- <article class="leader-row">
+            <img src="images/leader-template.png" alt="Бейшенбек кызы Сыймык" class="leader-row__img">
+            <div class="leader-row__info">
+              <h4 class="leader-row__name">Бейшенбек кызы Сыймык</h4>
+              <p class="leader-row__role">Ведущий специалист (кадровый сектор)</p>
+              <p class="leader-row__position">АХП</p>
+              <p class="leader-row__detail">Образование: 1999–2004 Бишкекский гуманитарный университет, юриспруденция</p>
+            </div>
+          </article> -->
+          <article class="leader-row">
+            <img src="images/bekturgan-kyzy-dina.png" alt="Бектурган кызы Дина" class="leader-row__img">
+            <div class="leader-row__info">
+              <h4 class="leader-row__name">Бектурган кызы Дина</h4>
+              <p class="leader-row__role" data-i18n="leaderBektRole">Ведущий специалист-юрист</p>
+              <p class="leader-row__position" data-i18n="leaderBektPosition">АХП</p>
+              <p class="leader-row__detail" data-i18n="leaderBektDetail">Образование: 2018–2021 ИсИТО «Терра», юриспруденция; 2021–2024 ИсИТО «Билимкана», юрист</p>
+            </div>
+          </article>
+          <article class="leader-row">
+            <img src="images/mamatkulov-baktyyar.png" alt="Маматкулов Бактыяр Максурович" class="leader-row__img">
+            <div class="leader-row__info">
+              <h4 class="leader-row__name">Маматкулов Бактыяр Максурович</h4>
+              <p class="leader-row__role" data-i18n="leaderMamaRole">Заведующий сектором</p>
+              <p class="leader-row__position" data-i18n="leaderMamaPosition">Сектор экономики</p>
+              <p class="leader-row__detail" data-i18n="leaderMamaDetail">Образование: 2012–2015 Художественный колледж при Национальной академии художеств КР им. Т. Садыкова, дизайн; 2015–2021 КГУСТА им. Н. Исанова, архитектура</p>
+            </div>
+          </article>
+          <article class="leader-row">
+            <img src="images/kanybekova-ainura.png" alt="Каныбекова Айнура Дамировна" class="leader-row__img">
+            <div class="leader-row__info">
+              <h4 class="leader-row__name">Каныбекова Айнура Дамировна</h4>
+              <p class="leader-row__role" data-i18n="leaderKanyRole">Главный специалист</p>
+              <p class="leader-row__position" data-i18n="leaderKanyPosition">Сектор правовой</p>
+              <p class="leader-row__detail" data-i18n="leaderKanyDetail">Образование: 2017–2022 КГУСТА им. Н. Исанова, архитектура, специальность — градостроитель</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="section-projects" class="section" data-section="projects">
+      <div class="container section-block animate-in">
+        <h2 class="section__heading" data-i18n="projectsPageHeading">Проекты</h2>
+        <p class="section__intro" data-i18n="projectsPageIntro">Направления развития городской среды и планирование территорий Таласской области. Материалы обновляются по мере утверждения документации.</p>
+        <div class="cards cards--3">
+          <article class="card">
+            <h3 class="card__title" data-i18n="projCard1Title">Схемы планирования</h3>
+            <p class="card__text" data-i18n="projCard1Body">Подготовка и согласование документов территориального планирования в установленном порядке.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title" data-i18n="projCard2Title">Проекты благоустройства</h3>
+            <p class="card__text" data-i18n="projCard2Body">Общественные пространства, озеленение и элементы малых архитектурных форм в населённых пунктах.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title" data-i18n="projCard3Title">Инженерная инфраструктура</h3>
+            <p class="card__text" data-i18n="projCard3Body">Согласование привязок объектов к сетям и параметров технологического присоединения.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- One window -->
+    <section id="section-onewindow" class="section" data-section="onewindow">
+      <div class="container section-block animate-in">
+        <h2 class="section__heading" data-i18n="navOnewindow">Единое окно</h2>
+        <div class="card">
+          <p class="card__text" data-i18n="oneWindowIntro">Раздел посвящён цифровым сервисам и единой точке приёма обращений. Материалы по направлениям онлайн-услуг доступны в одноимённом разделе сайта.</p>
+          <p class="card__text u-mt">
+            <a href="#apply" class="inline-action" data-nav="apply" data-i18n="owLinkApply">Перейти к онлайн-услугам</a>
+            ·
+            <a href="#status" class="inline-action" data-nav="status" data-i18n="owLinkStatus">Проверить статус заявки</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="section-services" class="section" data-section="services">
+      <div class="container section-block animate-in">
+        <h2 class="section__heading" data-i18n="services">Услуги</h2>
+        <p class="section__intro" data-i18n="servicesIntro">Основные типы услуг ТРУА для граждан, бизнеса и проектных организаций.</p>
+
+        <div class="service-detail card">
+          <h3 class="card__title" data-i18n="svc01Title">1. Разрешительные услуги</h3>
+          <ul class="list-docs">
+            <li data-i18n="svc01Li1">Выдача архитектурно-планировочного задания (АПЗ)</li>
+            <li data-i18n="svc01Li2">Разрешение на строительство</li>
+            <li data-i18n="svc01Li3">Разрешение на реконструкцию</li>
+            <li data-i18n="svc01Li4">Разрешение на перепланировку</li>
+          </ul>
+        </div>
+
+        <div class="service-detail card">
+          <h3 class="card__title" data-i18n="svc02Title">2. Согласование проектов</h3>
+          <ul class="list-docs">
+            <li data-i18n="svc02Li1">Согласование архитектурных проектов</li>
+            <li data-i18n="svc02Li2">Экспертиза проектной документации</li>
+            <li data-i18n="svc02Li3">Утверждение градостроительных решений</li>
+          </ul>
+        </div>
+
+        <div class="service-detail card">
+          <h3 class="card__title" data-i18n="svc03Title">3. Градостроительные документы</h3>
+          <ul class="list-docs">
+            <li data-i18n="svc03Li1">Выдача градостроительного заключения</li>
+            <li data-i18n="svc03Li2">Предоставление информации о земельном участке</li>
+            <li data-i18n="svc03Li3">Проверка соответствия генплану</li>
+          </ul>
+        </div>
+
+        <div class="service-detail card">
+          <h3 class="card__title" data-i18n="svc04Title">4. Ввод объектов в эксплуатацию</h3>
+          <ul class="list-docs">
+            <li data-i18n="svc04Li1">Акт ввода здания в эксплуатацию</li>
+            <li data-i18n="svc04Li2">Проверка завершенного строительства</li>
+          </ul>
+        </div>
+
+        <div class="service-detail card">
+          <h3 class="card__title" data-i18n="svc05Title">5. Справки и выписки</h3>
+          <ul class="list-docs">
+            <li data-i18n="svc05Li1">Справка об объекте недвижимости</li>
+            <li data-i18n="svc05Li2">Выписка из градостроительных документов</li>
+            <li data-i18n="svc05Li3">Архивные данные</li>
+          </ul>
+        </div>
+
+        <div class="service-detail card">
+          <h3 class="card__title" data-i18n="svc06Title">6. Консультационные услуги</h3>
+          <ul class="list-docs">
+            <li data-i18n="svc06Li1">Консультация по строительству</li>
+            <li data-i18n="svc06Li2">Консультация по документам</li>
+            <li data-i18n="svc06Li3">Помощь в оформлении заявок</li>
+          </ul>
+        </div>
+
+        <div class="service-detail card">
+          <h3 class="card__title" data-i18n="svc07Title">7. Земельные и планировочные услуги</h3>
+          <ul class="list-docs">
+            <li data-i18n="svc07Li1">Разработка градостроительного плана</li>
+            <li data-i18n="svc07Li2">Изменение целевого назначения земли</li>
+            <li data-i18n="svc07Li3">Раздел или объединение участков</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apply / Online services -->
+    <section id="section-apply" class="section" data-section="apply">
+      <div class="container section-block animate-in">
+        <h2 class="section__heading" data-i18n="applyHeading">Онлайн-услуги</h2>
+        <p class="section__intro" data-i18n="applyIntro">Выберите услугу: каждая форма на отдельной странице. Проверка статуса — на главной сайта.</p>
+        <div class="cards cards--2 online-services-cards">
+          <article class="card" id="online-apz">
+            <h3 class="card__title" data-i18n="onlineSvc1Title">1. Подача заявки на АПЗ</h3>
+            <p class="card__text card__text--muted" data-i18n="apzFormIntro">После отправки вы получите номер заявки. Статус можно проверить в разделе «Проверка статуса заявки».</p>
+            <p class="u-mt-sm"><a href="online-apz.html" class="btn btn--primary" data-i18n="applyOpenFormPage">Открыть форму</a></p>
+          </article>
+          <article class="card" id="online-building-permit">
+            <h3 class="card__title" data-i18n="onlineSvc2Title">2. Разрешение на строительство</h3>
+            <p class="card__text card__text--muted" data-i18n="bldFormIntro">После отправки вы получите номер заявки.</p>
+            <p class="u-mt-sm"><a href="online-building.html" class="btn btn--primary" data-i18n="applyOpenFormPage">Открыть форму</a></p>
+          </article>
+          <article class="card" id="online-project-approval">
+            <h3 class="card__title" data-i18n="onlineSvc3Title">3. Согласование проекта</h3>
+            <p class="card__text card__text--muted" data-i18n="projFormIntro">Электронная форма для подачи комплекта документов.</p>
+            <p class="u-mt-sm"><a href="online-project.html" class="btn btn--primary" data-i18n="applyOpenFormPage">Открыть форму</a></p>
+          </article>
+          <article class="card" id="online-toposurvey">
+            <h3 class="card__title" data-i18n="onlineSvc4Title">4. Топографическая съёмка</h3>
+            <p class="card__text card__text--muted" data-i18n="topoFormIntro">После отправки вы получите номер заявки.</p>
+            <p class="u-mt-sm"><a href="online-topo.html" class="btn btn--primary" data-i18n="applyOpenFormPage">Открыть форму</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Status -->
+    <section id="section-status" class="section" data-section="status">
+      <div class="container section-block animate-in narrow-form">
+        <h2 class="section__heading" data-i18n="checkStatus">Проверка статуса заявки</h2>
+        <form id="form-status" class="form card" novalidate>
+          <div class="form__group">
+            <label for="status-id" class="form__label" data-i18n="appNumber">Номер заявки</label>
+            <input type="text" id="status-id" class="form__input" placeholder="APZ-26-001 / TR-PR-26-012 / RS-2026-0045 / TS-2026-0018" autocomplete="off">
+            <span class="form__error" id="error-status-id"></span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" data-i18n="check">Проверить</button>
+        </form>
+        <div id="status-result" class="status-result card hidden" hidden>
+          <h3 class="status-result__heading" data-i18n="result">Результат</h3>
+          <p class="status-badge" id="status-badge">—</p>
+          <dl class="status-dl">
+            <dt>Номер</dt><dd id="status-out-id">—</dd>
+            <dt>ФИО</dt><dd id="status-out-fio">—</dd>
+            <dt>Телефон</dt><dd id="status-out-phone">—</dd>
+            <dt>Услуга</dt><dd id="status-out-service">—</dd>
+            <dt>Дата</dt><dd id="status-out-date">—</dd>
+            <dt>Комментарий</dt><dd id="status-out-comment">—</dd>
+            <dt>Специалист</dt><dd id="status-out-specialist">—</dd>
+            <dt>Тел. специалиста</dt><dd id="status-out-specialist-phone">—</dd>
+          </dl>
+          <p class="status-result__reviewer" id="status-out-reviewer-line"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="section-news" class="section" data-section="news">
+      <div class="container section-block animate-in">
+        <h2 class="section__heading" data-i18n="news">Новости</h2>
+        <div class="cards cards--2">
+          <article class="card card--news">
+            <time class="card__date" datetime="2026-05-05">5 мая 2026</time>
+            <h3 class="card__title" data-i18n="newsCard1Title">Уточнены границы участка под строительство новой школы</h3>
+            <p class="card__text" data-i18n="newsCard1Text">Начальник Таласского областного управления градостроительства и архитектуры уточнил границы земельного участка, отведенного под строительство новой школы.</p>
+          </article>
+          <article class="card card--news">
+            <time class="card__date" datetime="2026-04-20">20 апреля 2026</time>
+            <h3 class="card__title" data-i18n="newsCard2Title">Чистый контур города</h3>
+            <p class="card__text" data-i18n="newsCard2Text">Проведены плановые мероприятия по благоустройству и улучшению визуального облика городской среды.</p>
+          </article>
+          <article class="card card--news">
+            <time class="card__date" datetime="2026-04-12">12 апреля 2026</time>
+            <h3 class="card__title" data-i18n="newsCard3Title">Доверенность на представительство</h3>
+            <p class="card__text" data-i18n="newsCard3Text">Опубликованы разъяснения о порядке оформления доверенности для представления интересов заявителей.</p>
+          </article>
+          <article class="card card--news">
+            <time class="card__date" datetime="2026-04-01">1 апреля 2026</time>
+            <h3 class="card__title" data-i18n="newsCard4Title">Фасады приводятся в порядок</h3>
+            <p class="card__text" data-i18n="newsCard4Text">Продолжаются работы по приведению фасадов объектов в соответствие с утвержденными архитектурными требованиями.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vacancies -->
+    <section id="section-vacancies" class="section" data-section="vacancies">
+      <div class="container section-block animate-in">
+        <h2 class="section__heading" data-i18n="navVacancies">Объявления и вакансии</h2>
+        <div class="cards cards--2">
+          <article class="card">
+            <h3 class="card__title" data-i18n="vacCard1Title">Конкурс на замещение вакансии</h3>
+            <p class="card__text card__text--muted" data-i18n="vacCard1Meta">Размещено: 10 апреля 2026</p>
+            <p class="card__text u-mt-sm" data-i18n="vacCard1Text">Объявляется конкурс на должность специалиста отдела согласования проектной документации. Подробности — по запросу в отдел кадров.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title" data-i18n="vacCard2Title">График приёма граждан</h3>
+            <p class="card__text card__text--muted" data-i18n="vacCard2Meta">Актуально на II квартал 2026</p>
+            <p class="card__text u-mt-sm" data-i18n="vacCard2Text">Обновлён график приёма по направлениям: разрешения, проекты, заключения. Запись обязательна.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="section-contacts" class="section" data-section="contacts">
+      <div class="container section-block animate-in">
+        <h2 class="section__heading" data-i18n="contacts">Контакты</h2>
+        <div class="contacts-grid">
+          <div class="card contacts-card">
+            <h3 class="card__title" data-i18n="contactsAddress">Адрес</h3>
+            <p class="card__text" data-i18n="contactsAddressBlock">г. Талас, Таласская область, Кыргызская Республика</p>
+            <h3 class="card__title card__title--spaced" data-i18n="contactsPhoneTitle">Телефон</h3>
+            <p class="card__text"><a href="tel:+996000000000">+996 (000) 00-00-00</a></p>
+            <h3 class="card__title card__title--spaced" data-i18n="contactsEmailTitle">Электронная почта</h3>
+            <p class="card__text"><a href="mailto:info@trua.talas.gov.kg">info@trua.talas.gov.kg</a></p>
+            <h3 class="card__title card__title--spaced" data-i18n="contactsWorkTime">Режим работы</h3>
+            <p class="card__text" data-i18n="footerWorkTimeShort">9:00–18:00, обед 12:00–13:00</p>
+          </div>
+          <div class="map-wrap card">
+            <h3 class="card__title map-wrap__title" data-i18n="contactsHowToGet">Как добраться</h3>
+            <iframe
+              data-i18n-title="mapIframeTitle"
+              title="Карта: г. Талас, Таласская область"
+              class="map-iframe"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=72.215%2C42.505%2C72.275%2C42.545&amp;layer=mapnik&amp;marker=42.525%2C72.245">
+            </iframe>
+            <p class="map-attribution"><a href="https://www.openstreetmap.org/?mlat=42.525&amp;mlon=72.245" target="_blank" rel="noopener" data-i18n="mapOpenLarger">Открыть карту крупнее</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admin -->
+    <section id="section-admin" class="section" data-section="admin">
+      <div class="container section-block animate-in">
+        <h2 class="section__heading" data-i18n="adminPanel">Админ-панель</h2>
+        <div id="admin-login" class="card narrow-form admin-login">
+          <p class="section__intro" data-i18n="adminLoginText">Введите пароль для доступа к управлению статусами заявок.</p>
+          <div class="form__group">
+            <label for="admin-password" class="form__label" data-i18n="password">Пароль</label>
+            <input type="password" id="admin-password" class="form__input" autocomplete="current-password">
+          </div>
+          <button type="button" id="admin-login-btn" class="btn btn--primary btn--block" data-i18n="login">Войти</button>
+        </div>
+        <div id="admin-panel" class="admin-panel hidden" hidden>
+          <p class="admin-logout-wrap">
+            <button type="button" id="admin-logout-btn" class="btn btn--outline btn--sm" data-i18n="logout">Выйти</button>
+          </p>
+          <div id="admin-empty" class="card admin-empty hidden" hidden>
+            <p data-i18n="noApps">Заявок пока нет.</p>
+          </div>
+          <div id="admin-list" class="admin-list"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footerBrandTitle">ТРУА</h3>
+        <p class="footer__text" data-i18n="footerDisclosure">Официальная информация. При использовании материалов сайта ссылка на источник обязательна.</p>
+        <p class="footer__copy" data-i18n="footerCopy">© ТРУА</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footerContacts">Контакты</h3>
+        <p class="footer__text"><strong data-i18n="footerAddressLabel">Адрес:</strong> <span data-i18n="footerAddressValue">г. Талас, Таласская область</span></p>
+        <p class="footer__text"><strong data-i18n="footerPhoneLabel">Телефон:</strong> <a href="tel:+996000000000">+996 (000) 00-00-00</a></p>
+        <p class="footer__text"><strong data-i18n="footerEmailLabel">Email:</strong> <a href="mailto:info@trua.talas.gov.kg">info@trua.talas.gov.kg</a></p>
+        <p class="footer__text"><strong data-i18n="footerWorkLabel">Режим работы:</strong> <span data-i18n="footerWorkTimeShort">9:00–18:00, обед 12:00–13:00</span></p>
+      </div>
+      <div class="footer__col footer__col--links">
+        <h3 class="footer__title" data-i18n="footerSections">Разделы</h3>
+        <ul class="footer__links">
+          <li><a href="#services" data-nav="services" data-i18n="footerLinkServices">Услуги</a></li>
+          <li><a href="#onewindow" data-nav="onewindow" data-i18n="footerLinkOnewindow">Единое окно / цифровые сервисы</a></li>
+          <li><a href="#apply" data-nav="apply" data-i18n="footerLinkCitizen">Обращения граждан</a></li>
+          <li><a href="#status" data-nav="status" data-i18n="footerLinkStatus">Проверка статуса заявки</a></li>
+        </ul>
+        <p class="footer__admin"><a href="#admin" data-nav="admin" data-i18n="footerAdminLink">Админ-панель</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

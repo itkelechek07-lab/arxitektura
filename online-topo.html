@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТРУА</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-static-page="onlineTopo">
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+  <header class="header">
+    <div class="header__aux">
+      <div class="container header__aux-inner">
+        <div class="header__aux-left">
+          <span class="header__portal">Официальный портал</span>
+          <span class="header__region">Таласская область, Кыргызская Республика</span>
+        </div>
+        <div class="header__aux-right">
+          <a href="https://www.gov.kg/ky/information/stopcorruption" class="header__anti-corruption" target="_blank" rel="noopener noreferrer">Стоп коррупция</a>
+          <div class="lang-switcher" role="group" aria-label="Язык интерфейса">
+            <button type="button" class="lang-btn is-active" data-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" class="lang-btn" data-lang="ky" aria-pressed="false">KY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__brand">
+      <div class="container header__brand-inner">
+        <a href="index.html#home" class="logo-mark" aria-label="ТРУА — на главную">ТРУА</a>
+        <h1 class="header__sitename">Таласское районное управление по градостроительству и архитектуре</h1>
+      </div>
+    </div>
+    <div class="header__nav-wrap">
+      <div class="container header__nav-row">
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="main-nav" aria-label="Основное меню">
+          <ul class="nav__list">
+            <li><a href="index.html#home" class="nav__link" data-i18n="navHome">Главная</a></li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button type="button" class="nav__link nav__dropdown-toggle" id="about-dropdown-toggle" aria-expanded="false" aria-controls="about-dropdown-menu" data-i18n="navAbout">О нас</button>
+              <ul class="nav__dropdown" id="about-dropdown-menu">
+                <li><a href="index.html#about" class="nav__dropdown-link" data-about-target="about-leaders" data-i18n="navAboutLeaders">Руководители</a></li>
+                <li><a href="documents.html" class="nav__dropdown-link" data-i18n="navAboutDocuments">Нормативно-правовые документы</a></li>
+                <li><a href="history.html" class="nav__dropdown-link" data-i18n="navAboutHistory">История создания Таласской архитектуры</a></li>
+                <li><a href="photos.html" class="nav__dropdown-link" data-i18n="navAboutPhotos">Фотогалерея</a></li>
+                <li><a href="videos.html" class="nav__dropdown-link" data-i18n="navAboutVideos">Видеогалерея</a></li>
+                <li><a href="honor.html" class="nav__dropdown-link" data-i18n="navAboutHonor">Доска почета</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#projects" class="nav__link" data-i18n="navProjects">Проекты</a></li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button type="button" class="nav__link nav__dropdown-toggle" id="apply-dropdown-toggle" aria-expanded="false" aria-controls="apply-dropdown-menu" data-i18n="navApply">Онлайн-услуги</button>
+              <ul class="nav__dropdown" id="apply-dropdown-menu">
+                <li><a href="online-apz.html" class="nav__dropdown-link" data-i18n="navOnlineApz">Подача заявки на АПЗ</a></li>
+                <li><a href="online-building.html" class="nav__dropdown-link" data-i18n="navOnlineBuilding">Разрешение на строительство</a></li>
+                <li><a href="online-project.html" class="nav__dropdown-link" data-i18n="navOnlineProject">Согласование проекта</a></li>
+                <li><a href="online-topo.html" class="nav__dropdown-link" data-i18n="navOnlineTopo">Топографическая съёмка</a></li>
+                <li><a href="index.html#apply" class="nav__dropdown-link" data-i18n="navApplyAll">Все услуги на одной странице</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#onewindow" class="nav__link" data-i18n="navOnewindow">Единое окно</a></li>
+            <li><a href="index.html#services" class="nav__link" data-i18n="navServices">Услуги</a></li>
+            <li><a href="index.html#contacts" class="nav__link" data-i18n="navContacts">Контакты</a></li>
+            <li><a href="index.html#news" class="nav__link" data-i18n="navNews">Новости</a></li>
+            <li><a href="index.html#vacancies" class="nav__link" data-i18n="navVacancies">Объявления и вакансии</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section section--visible">
+      <div class="container section-block animate-in">
+        <p class="online-page-back u-mb-sm"><a href="index.html#apply" class="inline-action" data-i18n="applyBackToHub">← К списку онлайн-услуг</a></p>
+        <article class="card online-service-card">
+            <h3 class="card__title" data-i18n="onlineSvc4Title">4. Топографическая съёмка</h3>
+            <div class="online-service-form-wrap">
+              <p class="online-service-card__lead" data-i18n="topoFormIntroLead">Топографическая съёмка</p>
+              <p class="card__text card__text--muted" data-i18n="topoFormSubheading">Форма: топографическая съёмка</p>
+              <p class="card__text card__text--muted online-service-form-hint" data-i18n="topoFormIntro">После отправки вы получите номер заявки.</p>
+              <form id="form-topo" class="form online-service-form proj-form" novalidate>
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="topoSectionApplicant">Данные заявителя</p>
+                  <div class="form__group">
+                    <label for="topo-fio" class="form__label" data-i18n="topoFieldFio">ФИО заявителя *</label>
+                    <input type="text" id="topo-fio" name="fio" class="form__input" autocomplete="name" required minlength="5">
+                    <span class="form__error" id="error-topo-fio"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="topo-phone" class="form__label" data-i18n="topoFieldPhone">Номер телефона *</label>
+                    <input type="tel" id="topo-phone" name="phone" class="form__input" autocomplete="tel" required inputmode="tel" placeholder="+996 555 12 34 56">
+                    <span class="form__error" id="error-topo-phone"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="topo-residence" class="form__label" data-i18n="topoFieldResidence">Адрес проживания</label>
+                    <input type="text" id="topo-residence" name="residence" class="form__input" maxlength="500">
+                  </div>
+                </div>
+
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="topoSectionParcel">Информация об участке</p>
+                  <div class="form__group">
+                    <label for="topo-parcel-address" class="form__label" data-i18n="topoParcelAddress">Адрес земельного участка *</label>
+                    <input type="text" id="topo-parcel-address" name="parcel_address" class="form__input" required minlength="3" maxlength="500">
+                    <span class="form__error" id="error-topo-parcel-address"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="topo-cadastre" class="form__label" data-i18n="topoParcelCadastre">Кадастровый номер</label>
+                    <input type="text" id="topo-cadastre" name="cadastre" class="form__input" maxlength="80">
+                  </div>
+                  <div class="form__group">
+                    <label for="topo-area" class="form__label" data-i18n="topoParcelArea">Площадь участка (соток / м²)</label>
+                    <input type="text" id="topo-area" name="area" class="form__input" maxlength="40">
+                  </div>
+                  <div class="form__group">
+                    <label for="topo-parcel-type" class="form__label" data-i18n="topoParcelType">Тип участка</label>
+                    <select id="topo-parcel-type" name="parcel_type" class="form__input" required>
+                      <option value="" data-i18n="topoParcelPlaceholder">— Выберите тип —</option>
+                      <option value="residential" data-i18n="topoParcelResidential">Жилой</option>
+                      <option value="commercial" data-i18n="topoParcelCommercial">Коммерческий</option>
+                      <option value="agricultural" data-i18n="topoParcelAgricultural">Сельскохозяйственный</option>
+                      <option value="industrial" data-i18n="topoParcelIndustrial">Производственный</option>
+                      <option value="other" data-i18n="topoParcelOther">Другое</option>
+                    </select>
+                    <span class="form__error" id="error-topo-parcel-type"></span>
+                  </div>
+                </div>
+
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="topoSectionGoal">Цель топографической съёмки</p>
+                  <div class="form__group">
+                    <label for="topo-goal" class="form__label" data-i18n="topoGoalLabel">Цель</label>
+                    <select id="topo-goal" name="goal" class="form__input" required>
+                      <option value="" data-i18n="topoGoalPlaceholder">— Выберите цель —</option>
+                      <option value="design" data-i18n="topoGoalDesign">Проектирование строительства</option>
+                      <option value="apz" data-i18n="topoGoalApz">Получение АПЗ</option>
+                      <option value="building" data-i18n="topoGoalBuilding">Разрешение на строительство</option>
+                      <option value="recon" data-i18n="topoGoalRecon">Реконструкция объекта</option>
+                      <option value="utilities" data-i18n="topoGoalUtilities">Подведение коммуникаций</option>
+                      <option value="split" data-i18n="topoGoalSplit">Раздел земельного участка</option>
+                      <option value="other" data-i18n="topoGoalOther">Другое</option>
+                    </select>
+                    <span class="form__error" id="error-topo-goal"></span>
+                  </div>
+                </div>
+
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="topoSectionDocs">Необходимые документы</p>
+                  <p class="form__hint" data-i18n="topoDocsLead">Загрузка файлов</p>
+                  <div class="form__group">
+                    <label for="topo-file-passport" class="form__label" data-i18n="topoDocPassport">Паспорт заявителя *</label>
+                    <input type="file" id="topo-file-passport" name="file_passport" class="form__input form__input--file" accept="image/*,.pdf,application/pdf">
+                    <span class="form__error" id="error-topo-passport"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="topo-file-land" class="form__label" data-i18n="topoDocLand">Документ на земельный участок</label>
+                    <input type="file" id="topo-file-land" name="file_land" class="form__input form__input--file">
+                  </div>
+                  <div class="form__group">
+                    <label for="topo-file-tech" class="form__label" data-i18n="topoDocTech">Технический паспорт (если есть)</label>
+                    <input type="file" id="topo-file-tech" name="file_tech" class="form__input form__input--file">
+                  </div>
+                  <div class="form__group">
+                    <label for="topo-file-scheme" class="form__label" data-i18n="topoDocScheme">Схема участка</label>
+                    <input type="file" id="topo-file-scheme" name="file_scheme" class="form__input form__input--file">
+                  </div>
+                  <div class="form__group">
+                    <label for="topo-file-doc-receipt" class="form__label" data-i18n="topoDocReceipt">Квитанция об оплате</label>
+                    <input type="file" id="topo-file-doc-receipt" name="file_doc_receipt" class="form__input form__input--file">
+                  </div>
+                </div>
+
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="topoSectionParams">Параметры съёмки</p>
+                  <div class="form__group">
+                    <label for="topo-scale" class="form__label" data-i18n="topoScale">Масштаб съёмки</label>
+                    <select id="topo-scale" name="scale" class="form__input" required>
+                      <option value="" data-i18n="topoScalePlaceholder">— Выберите масштаб —</option>
+                      <option value="500" data-i18n="topoScale500">1:500</option>
+                      <option value="1000" data-i18n="topoScale1000">1:1000</option>
+                      <option value="2000" data-i18n="topoScale2000">1:2000</option>
+                    </select>
+                    <span class="form__error" id="error-topo-scale"></span>
+                  </div>
+                  <fieldset class="form__group form__fieldset">
+                    <legend class="form__label" data-i18n="topoNetworksLegend">Наличие инженерных сетей</legend>
+                    <label class="form__radio-label"><input type="radio" name="topo-networks" value="yes" required> <span data-i18n="topoNetworksYes">Да</span></label>
+                    <label class="form__radio-label"><input type="radio" name="topo-networks" value="no"> <span data-i18n="topoNetworksNo">Нет</span></label>
+                    <span class="form__error" id="error-topo-networks"></span>
+                  </fieldset>
+                </div>
+
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="topoSectionExtra">Дополнительная информация</p>
+                  <div class="form__group">
+                    <label for="topo-comment" class="form__label" data-i18n="topoComment">Комментарий / примечание</label>
+                    <textarea id="topo-comment" name="comment" class="form__input form__textarea" rows="3" maxlength="2000"></textarea>
+                  </div>
+                </div>
+
+                <div class="proj-form-section">
+                  <p class="online-service-card__lead" data-i18n="topoSectionPay">Оплата услуги</p>
+                  <div class="form__group">
+                    <label for="topo-payment" class="form__label" data-i18n="topoPayLabel">Способ оплаты</label>
+                    <select id="topo-payment" name="payment" class="form__input" required>
+                      <option value="" data-i18n="topoPayPlaceholder">— Выберите способ оплаты —</option>
+                      <option value="elcart" data-i18n="topoPayElcart">Элкарт</option>
+                      <option value="mbank" data-i18n="topoPayMbank">MBank</option>
+                      <option value="omoney" data-i18n="topoPayOmoney">О! Деньги</option>
+                      <option value="megapay" data-i18n="topoPayMegapay">MegaPay</option>
+                      <option value="card" data-i18n="topoPayCard">Visa / MasterCard</option>
+                    </select>
+                    <span class="form__error" id="error-topo-payment"></span>
+                  </div>
+                  <div class="apz-payment-block">
+                    <p class="online-service-card__lead" data-i18n="topoQrTitle">Оплата (QR-код)</p>
+                    <p class="card__text card__text--muted apz-payment-block__caption" data-i18n="topoQrCaption">Оплатите через приложение и прикрепите чек ниже.</p>
+                    <figure class="apz-payment-qr">
+                      <img id="topo-qr-image" src="images/gosposhlina-qr.png" alt="" width="240" height="240" loading="lazy">
+                    </figure>
+                  </div>
+                  <div class="form__group">
+                    <label for="topo-service-receipt" class="form__label" data-i18n="topoServiceReceipt">Подтверждение оплаты услуги *</label>
+                    <input type="file" id="topo-service-receipt" name="service_receipt" class="form__input form__input--file" accept="image/*,.pdf,application/pdf" required>
+                    <span class="form__hint" data-i18n="topoServiceReceiptHint">Чек или квитанция после оплаты.</span>
+                    <span class="form__error" id="error-topo-service-receipt"></span>
+                  </div>
+                  <div class="form__group form__group--checkbox">
+                    <label class="form__checkbox-label">
+                      <input type="checkbox" id="topo-fee" name="fee" required>
+                      <span data-i18n="topoFieldFee">Подтверждаю оплату</span>
+                    </label>
+                    <span class="form__error" id="error-topo-fee"></span>
+                  </div>
+                </div>
+
+                <div class="form__actions form__actions--row">
+                  <button type="submit" class="btn btn--primary" data-i18n="topoSubmit">Подать заявку</button>
+                  <button type="button" class="btn btn--outline" id="topo-reset" data-i18n="topoClearForm">Очистить форму</button>
+                </div>
+              </form>
+              <div id="topo-result" class="apz-result card hidden" hidden>
+                <p class="apz-result__title" data-i18n="topoSuccessTitle">Заявка принята</p>
+                <p class="apz-result__id"><span data-i18n="topoSuccessNumberLabel">Номер заявки:</span> <strong id="topo-id-display"></strong></p>
+                <p class="apz-result__hint" data-i18n="topoSuccessHint">Данные сохранены.</p>
+                <p class="apz-result__link"><a href="index.html#status" class="inline-action" data-i18n="topoLinkStatus">Перейти к проверке статуса</a></p>
+              </div>
+            </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footerBrandTitle">ТРУА</h3>
+        <p class="footer__text" data-i18n="footerDisclosure">Официальная информация.</p>
+        <p class="footer__copy" data-i18n="footerCopy">© ТРУА</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footerContacts">Контакты</h3>
+        <p class="footer__text"><strong data-i18n="footerAddressLabel">Адрес:</strong> <span data-i18n="footerAddressValue">г. Талас</span></p>
+        <p class="footer__text"><strong data-i18n="footerPhoneLabel">Телефон:</strong> <a href="tel:+996000000000">+996 (000) 00-00-00</a></p>
+      </div>
+      <div class="footer__col footer__col--links">
+        <h3 class="footer__title" data-i18n="footerSections">Разделы</h3>
+        <ul class="footer__links">
+          <li><a href="index.html#services" data-i18n="footerLinkServices">Услуги</a></li>
+          <li><a href="index.html#apply" data-i18n="footerLinkCitizen">Обращения граждан</a></li>
+          <li><a href="index.html#status" data-i18n="footerLinkStatus">Проверка статуса заявки</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

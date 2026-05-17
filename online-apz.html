@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТРУА</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-static-page="onlineApz">
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+  <header class="header">
+    <div class="header__aux">
+      <div class="container header__aux-inner">
+        <div class="header__aux-left">
+          <span class="header__portal">Официальный портал</span>
+          <span class="header__region">Таласская область, Кыргызская Республика</span>
+        </div>
+        <div class="header__aux-right">
+          <a href="https://www.gov.kg/ky/information/stopcorruption" class="header__anti-corruption" target="_blank" rel="noopener noreferrer">Стоп коррупция</a>
+          <div class="lang-switcher" role="group" aria-label="Язык интерфейса">
+            <button type="button" class="lang-btn is-active" data-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" class="lang-btn" data-lang="ky" aria-pressed="false">KY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__brand">
+      <div class="container header__brand-inner">
+        <a href="index.html#home" class="logo-mark" aria-label="ТРУА — на главную">ТРУА</a>
+        <h1 class="header__sitename">Таласское районное управление по градостроительству и архитектуре</h1>
+      </div>
+    </div>
+    <div class="header__nav-wrap">
+      <div class="container header__nav-row">
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="main-nav" aria-label="Основное меню">
+          <ul class="nav__list">
+            <li><a href="index.html#home" class="nav__link" data-i18n="navHome">Главная</a></li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button type="button" class="nav__link nav__dropdown-toggle" id="about-dropdown-toggle" aria-expanded="false" aria-controls="about-dropdown-menu" data-i18n="navAbout">О нас</button>
+              <ul class="nav__dropdown" id="about-dropdown-menu">
+                <li><a href="index.html#about" class="nav__dropdown-link" data-about-target="about-leaders" data-i18n="navAboutLeaders">Руководители</a></li>
+                <li><a href="documents.html" class="nav__dropdown-link" data-i18n="navAboutDocuments">Нормативно-правовые документы</a></li>
+                <li><a href="history.html" class="nav__dropdown-link" data-i18n="navAboutHistory">История создания Таласской архитектуры</a></li>
+                <li><a href="photos.html" class="nav__dropdown-link" data-i18n="navAboutPhotos">Фотогалерея</a></li>
+                <li><a href="videos.html" class="nav__dropdown-link" data-i18n="navAboutVideos">Видеогалерея</a></li>
+                <li><a href="honor.html" class="nav__dropdown-link" data-i18n="navAboutHonor">Доска почета</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#projects" class="nav__link" data-i18n="navProjects">Проекты</a></li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button type="button" class="nav__link nav__dropdown-toggle" id="apply-dropdown-toggle" aria-expanded="false" aria-controls="apply-dropdown-menu" data-i18n="navApply">Онлайн-услуги</button>
+              <ul class="nav__dropdown" id="apply-dropdown-menu">
+                <li><a href="online-apz.html" class="nav__dropdown-link" data-i18n="navOnlineApz">Подача заявки на АПЗ</a></li>
+                <li><a href="online-building.html" class="nav__dropdown-link" data-i18n="navOnlineBuilding">Разрешение на строительство</a></li>
+                <li><a href="online-project.html" class="nav__dropdown-link" data-i18n="navOnlineProject">Согласование проекта</a></li>
+                <li><a href="online-topo.html" class="nav__dropdown-link" data-i18n="navOnlineTopo">Топографическая съёмка</a></li>
+                <li><a href="index.html#apply" class="nav__dropdown-link" data-i18n="navApplyAll">Все услуги на одной странице</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#onewindow" class="nav__link" data-i18n="navOnewindow">Единое окно</a></li>
+            <li><a href="index.html#services" class="nav__link" data-i18n="navServices">Услуги</a></li>
+            <li><a href="index.html#contacts" class="nav__link" data-i18n="navContacts">Контакты</a></li>
+            <li><a href="index.html#news" class="nav__link" data-i18n="navNews">Новости</a></li>
+            <li><a href="index.html#vacancies" class="nav__link" data-i18n="navVacancies">Объявления и вакансии</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section section--visible">
+      <div class="container section-block animate-in">
+        <p class="online-page-back u-mb-sm"><a href="index.html#apply" class="inline-action" data-i18n="applyBackToHub">← К списку онлайн-услуг</a></p>
+        <article class="card online-service-card">
+            <h3 class="card__title" data-i18n="onlineSvc1Title">1. Подача заявки на АПЗ</h3>
+            <div class="online-service-form-wrap">
+              <p class="online-service-card__lead" data-i18n="apzFormIntroLead">Заполните заявку</p>
+              <p class="card__text card__text--muted online-service-form-hint" data-i18n="apzFormIntro">После отправки вы получите номер заявки. Статус можно проверить в разделе «Проверка статуса заявки». На указанный номер телефона будет отправлено SMS о результате рассмотрения.</p>
+              <form id="form-apz" class="form online-service-form" novalidate>
+                <div class="form__group">
+                  <label for="apz-fio" class="form__label" data-i18n="apzFieldFio">ФИО заявителя *</label>
+                  <input type="text" id="apz-fio" name="fio" class="form__input" autocomplete="name" required minlength="5">
+                  <span class="form__error" id="error-apz-fio"></span>
+                </div>
+                <div class="form__group">
+                  <label for="apz-phone" class="form__label" data-i18n="apzFieldPhone">Телефон для SMS-уведомлений *</label>
+                  <input type="tel" id="apz-phone" name="phone" class="form__input" autocomplete="tel" required inputmode="numeric" placeholder="+996 555 12 34 56">
+                  <span class="form__error" id="error-apz-phone"></span>
+                </div>
+                <div class="form__group">
+                  <label for="apz-email" class="form__label" data-i18n="apzFieldEmail">Электронная почта</label>
+                  <input type="email" id="apz-email" name="email" class="form__input" autocomplete="email">
+                </div>
+                <div class="form__group">
+                  <label for="apz-files" class="form__label" data-i18n="apzFieldFiles">Документы</label>
+                  <input type="file" id="apz-files" name="files" class="form__input form__input--file" multiple>
+                  <span class="form__hint" data-i18n="apzFilesHint">Можно выбрать несколько файлов (названия сохраняются в заявке).</span>
+                </div>
+
+                <div class="apz-payment-block">
+                  <p class="online-service-card__lead" data-i18n="apzQrTitle">Оплата государственной пошлины</p>
+                  <p class="card__text card__text--muted apz-payment-block__caption" data-i18n="apzQrCaption">Отсканируйте QR-код в приложении MBank или О! Деньги, оплатите пошлину, затем прикрепите чек об оплате ниже.</p>
+                  <figure class="apz-payment-qr">
+                    <img id="apz-qr-image" src="images/gosposhlina-qr.png" alt="QR-код для оплаты государственной пошлины" width="240" height="240" loading="lazy">
+                  </figure>
+                </div>
+
+                <div class="form__group">
+                  <label for="apz-receipt" class="form__label" data-i18n="apzFieldReceipt">Чек об оплате *</label>
+                  <input type="file" id="apz-receipt" name="receipt" class="form__input form__input--file" accept="image/*,.pdf,application/pdf" required>
+                  <span class="form__hint" data-i18n="apzReceiptHint">Фото или PDF чека из банковского приложения.</span>
+                  <span class="form__error" id="error-apz-receipt"></span>
+                </div>
+
+                <div class="form__group form__group--checkbox">
+                  <label class="form__checkbox-label">
+                    <input type="checkbox" id="apz-fee" name="fee" required>
+                    <span data-i18n="apzFieldFee">Подтверждаю оплату государственной пошлины через MBank или О! Деньги</span>
+                  </label>
+                  <span class="form__error" id="error-apz-fee"></span>
+                </div>
+                <div class="form__group">
+                  <label for="apz-comment" class="form__label" data-i18n="apzFieldComment">Дополнительные сведения</label>
+                  <textarea id="apz-comment" name="comment" class="form__input form__textarea" rows="3" maxlength="2000"></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--block" data-i18n="apzSubmit">Подать заявку</button>
+              </form>
+              <div id="apz-result" class="apz-result card hidden" hidden>
+                <p class="apz-result__title" data-i18n="apzSuccessTitle">Заявка принята</p>
+                <p class="apz-result__id"><span data-i18n="apzSuccessNumberLabel">Номер заявки:</span> <strong id="apz-id-display"></strong></p>
+                <p class="apz-result__hint" data-i18n="apzSuccessHint">Сохраните номер. Статус заявки проверяйте в разделе «Проверка статуса». SMS придёт на указанный телефон.</p>
+                <p class="apz-result__link"><a href="index.html#status" class="inline-action" data-i18n="apzLinkStatus">Перейти к проверке статуса</a></p>
+              </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footerBrandTitle">ТРУА</h3>
+        <p class="footer__text" data-i18n="footerDisclosure">Официальная информация.</p>
+        <p class="footer__copy" data-i18n="footerCopy">© ТРУА</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footerContacts">Контакты</h3>
+        <p class="footer__text"><strong data-i18n="footerAddressLabel">Адрес:</strong> <span data-i18n="footerAddressValue">г. Талас</span></p>
+        <p class="footer__text"><strong data-i18n="footerPhoneLabel">Телефон:</strong> <a href="tel:+996000000000">+996 (000) 00-00-00</a></p>
+      </div>
+      <div class="footer__col footer__col--links">
+        <h3 class="footer__title" data-i18n="footerSections">Разделы</h3>
+        <ul class="footer__links">
+          <li><a href="index.html#services" data-i18n="footerLinkServices">Услуги</a></li>
+          <li><a href="index.html#apply" data-i18n="footerLinkCitizen">Обращения граждан</a></li>
+          <li><a href="index.html#status" data-i18n="footerLinkStatus">Проверка статуса заявки</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
